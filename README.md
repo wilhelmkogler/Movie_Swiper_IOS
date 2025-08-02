@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+<h1>🚘 Movie Swiper MobileApp </h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<img src="assets/images/git/2.png" alt="kwheels_homepage">
 
-## Get started
+<p align="justify">This 'Movie Swiper' mobile application provides users with a Tinder-like movie rating experience.
+    Users can swipe right to like or left to dislike the movie cards that appear, which are fetched from the OMDb API.
+    Each movie card displays the title, release year, rating, runtime, genre, and a short plot summary.
+    Liked movies are saved to the Favorites section for later viewing.</p>
 
-1. Install dependencies
+<h2>Features</h2>
 
-   ```bash
-   npm install
-   ```
+<ul>
+    <li>Account creation and login</li>
+    <li>Tinder-like swipe interaction (right to like, left to dislike)</li>
+    <li>Add movies to favorites for later viewing</li>
+    <li>Display detailed movie information (title, year, rating, runtime, genre, plot)</li>
+    <li>Smooth and pleasant animations for enhanced user experience</li>
+</ul>
 
-2. Start the app
+<h2>Tech Stack</h2>
 
-   ```bash
-   npx expo start
-   ```
+<p>React Native, Nativewind, Expo Go, Firebase</p>
 
-In the output, you'll find options to open the app in a
+<h2>Account</h2>
+<img src="assets/images/git/1.png" alt="" srcset="">
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+<p align="justify">When the app is launched, the user must log in either with an existing account or register a new one.
+    In the case of registration, the user data is saved to the Firebase database.</p>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<h2>Film Details</h2>
 
-## Get a fresh project
+<img src="assets/images/git/2.png" alt="" srcset="">
 
-When you're ready, run:
+<p align="justify">After a successful login, the user is presented with swipeable movie cards.
+    Movies can be swiped right to like or left to dislike.
+    By tapping the small information icon, additional movie details are revealed, including the release year, IMDb
+    rating, genre, runtime in minutes, and a short plot summary.</p>
 
-```bash
-npm run reset-project
-```
+<h2>Swipe</h2>
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+<img src="assets/images/git/3.png" alt="" srcset="">
 
-## Learn more
+<p align="justify">In the navigation bar, the heart-shaped menu button leads to the Favorites page, where the movies
+    liked by the user are listed.
+    Naturally, if the user hasn't liked any movies yet, nothing is displayed.</p>
 
-To learn more about developing your project with Expo, look at the following resources:
+</p>
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+<h2>Favorites</h2>
 
-## Join the community
+<img src="assets/images/git/4.png" alt="" srcset="">
 
-Join our community of developers creating universal apps.
+<p align="justify">The liked movies are also displayed as cards in a two-column layout and are stored in the Firebase
+    database.
+    Users can tap on a card to view the movie’s details.
+    Each card has a trash icon in the top-right corner, which allows the user to remove the movie from their favorites
+    after confirming a popup message.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+</p>
+
+<h2>Profile</h2>
+
+<img src="assets/images/git/5.png" alt="" srcset="">
+
+<p align="justify">In the navigation bar, the user icon opens the personal profile page, where the user can view their
+    basic information, such as profile picture, name, email address, and password.
+    These details can be edited by pressing a button.
+    The profile also displays how many favorite movies the user has, their most liked movie genre, and the average
+    rating of their favorite films.
+    Naturally, a log out button is also available.</p>
